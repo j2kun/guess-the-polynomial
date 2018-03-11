@@ -9,7 +9,7 @@ answer = input("What is f({})? ".format(N))
 y = int(answer)
 
 coeffs = []
-while y % N != 0:
+while y > 0:
     coeff = y % N
     coeffs.append(int(coeff))
     y = (y - coeff) / N
